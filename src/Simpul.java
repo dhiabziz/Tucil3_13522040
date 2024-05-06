@@ -47,13 +47,14 @@ public class Simpul implements Comparable<Simpul>{
         return Integer.compare(this.getCost(), other.getCost());
     }
 
-    public static int Distance(Simpul p , Simpul q){
+    public static int Distance(String p , String q){
         int d = 0;
-        for(int i = 0; i<p.word.length(); i++){
-            if(p.word.charAt(i) != q.word.charAt(i)){
+        for(int i = 0; i<p.length(); i++){
+            if(p.charAt(i) != q.charAt(i)){
                 d++;
             }
         }
+
         return d;
     }
 }
