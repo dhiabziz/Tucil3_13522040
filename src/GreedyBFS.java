@@ -25,9 +25,12 @@ public class GreedyBFS {
                             visited.add(tetangga);
                             //System.out.print(tetangga);
                             int cost = Simpul.Distance(tetangga, endword);
-                            if(cost<=minCost){
+                            if(cost<minCost){
+                                System.out.println("=" + tetangga + cost);
                                 minCost = cost;
                                 greedString = tetangga;
+                            }else{
+                                System.out.println("/" + tetangga + cost);
                             }
                         }
 
