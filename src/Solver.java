@@ -13,18 +13,19 @@ public class Solver{
             endword = scanner.nextLine();
 
             if(startword.length() != endword.length()){
-                System.out.println("\nLength of startword and endword is different!");
+                System.out.println("Length of startword and endword is different!");
             }else{
-                stop = true;
                 filepath = "resources\\" +  startword.length() + "-letter-words.txt";
                 kamus = new Kamus(filepath);
-                System.out.println("Tes1");
-                String tes = "EAT";
-                if(kamus.isValid(tes)){
-                    System.out.println("Aman!");
+                startword = startword.toUpperCase();
+                endword = endword.toUpperCase();
+
+                if(!kamus.isValid(startword) || !kamus.isValid(endword)){
+                    System.out.println("Your words isn't valid");
                 }
                 else{
-                    System.out.println("Tes2");
+                    stop = true;
+                    System.out.println("Your words is valid!");
                 }
             }
             
