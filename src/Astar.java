@@ -31,7 +31,6 @@ public class Astar {
                             //System.out.print(tetangga);
                             visited.add(tetangga);
                             q.add(new SimpulStar(tetangga, currSimpul.getG() + 1, Simpul.Distance(tetangga, endword), currSimpul));
-                            System.out.println(tetangga + q.peek().getCost());
                         }
                     }
                 }

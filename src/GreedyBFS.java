@@ -26,11 +26,8 @@ public class GreedyBFS {
                             //System.out.print(tetangga);
                             int cost = Simpul.Distance(tetangga, endword);
                             if(cost<minCost){
-                                System.out.println("=" + tetangga + cost);
                                 minCost = cost;
                                 greedString = tetangga;
-                            }else{
-                                System.out.println("/" + tetangga + cost);
                             }
                         }
 
