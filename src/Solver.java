@@ -4,14 +4,11 @@ public class Solver{
         //Inisialisasi variabel
         Scanner scanner = new Scanner(System.in);
         Boolean inputvalid = false;
-        Boolean stopvalid = false;
         Boolean algorithmValid = false;
-        Boolean stopGame = false;
         Integer algorithm = null;
         String startword = null;
         String endword = null;
         String filepath = null;
-        Integer play = null;
         Kamus kamus = null;
         Result res = null;
         long startTime = 0;

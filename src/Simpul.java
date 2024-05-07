@@ -58,3 +58,4 @@ public class Simpul implements Comparable<Simpul>{
         return d;
     }
 }
+
